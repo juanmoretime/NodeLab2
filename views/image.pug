@@ -1,0 +1,15 @@
+extends layout.pug
+
+block content 
+
+    img(src=`/travel-images/${ImageData.filename}` width='100')
+
+    br
+    
+    h3=ImageData.title
+
+    h3=ImageData.location.city+', '+ImageData.location.country
+
+    h3=ImageData.user.firstname+' '+ImageData.user.lastname
+
+    div=ImageData.description

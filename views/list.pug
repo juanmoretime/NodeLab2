@@ -1,0 +1,11 @@
+extends layout.pug
+
+block content
+    h1 Countries with photos
+    div.booklist
+        each book in ImageData
+            div
+                a(href=`/travel/photos/${book._id}`)
+                   div=book._id+`[${book.count}]`
+            br
+                

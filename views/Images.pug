@@ -1,0 +1,8 @@
+extends layout.pug
+
+block content
+    div.photolist
+        each book in ImageData
+           a(href=`/travel/photo/${book.id}`) 
+            img(src=`/travel-images/${book.filename}` width='100')
+                     
